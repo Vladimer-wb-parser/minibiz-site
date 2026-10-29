@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Калькулятор комиссии — MiniBiz</title>
+<meta name="description" content="Бесплатный калькулятор комиссии: считает размер комиссии и сумму после её вычета.">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232ee6a8'/%3E%3Ctext x='16' y='22' font-family='Segoe UI,Arial' font-size='16' font-weight='700' text-anchor='middle' fill='%2304231a'%3EM%3C/text%3E%3C/svg%3E">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'self'; base-uri 'self'">
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html">
+      <span class="logo-mark" aria-hidden="true">M</span>
+      <span>MiniBiz</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Меню</button>
+    <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+      <a href="../index.html">Главная</a>
+      <a href="../index.html#directions">Направления</a>
+      <a href="../catalog.html">Каталог</a>
+      <a href="commission.html" aria-current="page">Инструменты</a>
+      <a href="../about.html">О проекте</a>
+      <a href="../help.html">Помощь</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container tool-shell">
+    <h1>Калькулятор комиссии</h1>
+    <p class="text-muted">
+      Считает, сколько заберёт площадка и сколько останется вам. Всё выполняется
+      в браузере, данные никуда не отправляются.
+    </p>
+
+    <noscript>
+      <div class="note">
+        Калькулятор считает на JavaScript. Без него расчёт недоступен — включите JavaScript
+        в браузере и обновите страницу.
+      </div>
+    </noscript>
+
+    <form class="tool-panel" novalidate>
+      <div class="form-grid">
+        <div class="form-row">
+          <label for="price">Цена товара, ₽</label>
+          <input type="number" id="price" name="price" inputmode="decimal" min="0" step="0.01" value="1500" autocomplete="off">
+          <span class="field-error" id="price-error" role="alert"></span>
+        </div>
+        <div class="form-row">
+          <label for="fee-percent">Комиссия, %</label>
+          <input type="number" id="fee-percent" name="fee-percent" inputmode="decimal" min="0" max="100" step="0.1" value="15" autocomplete="off">
+          <span class="field-error" id="fee-error" role="alert"></span>
+        </div>
+      </div>
+
+      <div class="result-box" aria-live="polite">
+        <div class="result-row">
+          <span class="label">Комиссия</span>
+          <span class="value" id="result-fee">—</span>
+        </div>
+        <div class="result-row total">
+          <span class="label">Останется после комиссии</span>
+          <span class="value" id="result-net">—</span>
+        </div>
+        <p id="result-percent" class="result-note"></p>
+      </div>
+    </form>
+
+    <div class="note">
+      Пример: цена 1500 ₽ и комиссия 15% — комиссия 225 ₽, на руки 1275 ₽.
+      Округление выполняется до копеек.
+    </div>
+
+    <p class="mt-28">
+      <a href="../catalog.html">← Другие инструменты</a>
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom flat">
+      <span>© <span id="footer-year">2026</span> MiniBiz</span>
+      <span><a href="../help.html">Помощь</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/tools.js"></script>
+</body>
+</html>

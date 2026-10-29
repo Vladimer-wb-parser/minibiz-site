@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Анализатор текста — MiniBiz</title>
+<meta name="description" content="Считает символы, символы без пробелов, слова и строки в реальном времени.">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232ee6a8'/%3E%3Ctext x='16' y='22' font-family='Segoe UI,Arial' font-size='16' font-weight='700' text-anchor='middle' fill='%2304231a'%3EM%3C/text%3E%3C/svg%3E">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'self'; base-uri 'self'">
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html">
+      <span class="logo-mark" aria-hidden="true">M</span>
+      <span>MiniBiz</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Меню</button>
+    <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+      <a href="../index.html">Главная</a>
+      <a href="../index.html#directions">Направления</a>
+      <a href="../catalog.html">Каталог</a>
+      <a href="text-analyzer.html" aria-current="page">Инструменты</a>
+      <a href="../about.html">О проекте</a>
+      <a href="../help.html">Помощь</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container tool-shell">
+    <h1>Анализатор текста</h1>
+    <p class="text-muted">
+      Показатели обновляются при вводе. Текст не отправляется на сервер и не сохраняется.
+    </p>
+
+    <noscript>
+      <div class="note">
+        Анализатор считает текст на JavaScript. Без него показатели останутся нулевыми —
+        включите JavaScript в браузере и обновите страницу.
+      </div>
+    </noscript>
+
+    <div class="tool-panel">
+      <label for="analyzer-text">Текст</label>
+      <textarea id="analyzer-text" rows="10" placeholder="Вставьте или введите текст…"></textarea>
+
+      <div class="stats-grid" aria-live="polite">
+        <div class="stat">
+          <span class="stat-value" id="stat-chars">0</span>
+          <span class="stat-label">символов</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="stat-chars-nospace">0</span>
+          <span class="stat-label">без пробелов</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="stat-words">0</span>
+          <span class="stat-label">слов</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="stat-lines">0</span>
+          <span class="stat-label">строк</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      Слова считаются по пробелам и переносам строк. Символы подсчитываются
+      с учётом эмодзи как один символ.
+    </div>
+
+    <p class="mt-28">
+      <a href="../catalog.html">← Другие инструменты</a>
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom flat">
+      <span>© <span id="footer-year">2026</span> MiniBiz</span>
+      <span><a href="../help.html">Помощь</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/tools.js"></script>
+</body>
+</html>

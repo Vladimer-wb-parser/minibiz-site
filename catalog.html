@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог — MiniBiz</title>
+<meta name="description" content="Каталог цифровых инструментов MiniBiz: бесплатные браузерные помощники и программы для Windows.">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232ee6a8'/%3E%3Ctext x='16' y='22' font-family='Segoe UI,Arial' font-size='16' font-weight='700' text-anchor='middle' fill='%2304231a'%3EM%3C/text%3E%3C/svg%3E">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'self'; base-uri 'self'">
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-mark" aria-hidden="true">M</span>
+      <span>MiniBiz</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Меню</button>
+    <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="index.html#directions">Направления</a>
+      <a href="catalog.html" aria-current="page">Каталог</a>
+      <a href="tools/commission.html">Инструменты</a>
+      <a href="about.html">О проекте</a>
+      <a href="help.html">Помощь</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <h1>Каталог</h1>
+    <p class="catalog-intro">
+      Пять направлений MiniBiz в одном списке. Работающие инструменты отмечены
+      как «Готов» и открываются сразу, остальные — «В разработке» или «Скоро»:
+      они ещё не созданы. Фильтры по направлению и категории, а также поиск
+      работают без перезагрузки страницы.
+    </p>
+
+    <noscript>
+      <div class="note">
+        Каталог, поиск и фильтры работают на JavaScript, поэтому без него список
+        инструментов не отображается. Откройте инструменты напрямую:
+        <a href="tools/commission.html">калькулятор комиссии</a>,
+        <a href="tools/description.html">генератор описаний</a>,
+        <a href="tools/text-analyzer.html">анализатор текста</a>.
+        Описание всех пяти направлений — на <a href="index.html#directions">главной странице</a>.
+      </div>
+    </noscript>
+
+    <div class="toolbar">
+      <div class="field-inline">
+        <label for="catalog-search">Поиск по названию</label>
+        <input type="text" id="catalog-search" placeholder="Например: калькулятор" autocomplete="off">
+      </div>
+      <div class="w-full">
+        <span class="field-label">Направления</span>
+        <div class="chips" id="direction-chips"></div>
+      </div>
+      <div class="w-full">
+        <span class="field-label">Категории</span>
+        <div class="chips" id="category-chips"></div>
+      </div>
+    </div>
+
+    <p id="catalog-count" class="catalog-count" aria-live="polite"></p>
+
+    <div class="grid grid-3" id="catalog-grid"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">M</span>
+          <span>MiniBiz</span>
+        </a>
+        <p class="footer-note">
+          Цифровая мастерская MiniBiz: программы для Windows, сайты, разработка
+          для Roblox, автоматизация и цифровые наборы.
+        </p>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <ul class="footer-links">
+          <li><a href="index.html#directions">Направления</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="tools/commission.html">Калькулятор комиссии</a></li>
+          <li><a href="tools/description.html">Генератор описаний</a></li>
+          <li><a href="tools/text-analyzer.html">Анализатор текста</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Информация</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="help.html">Помощь</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Принципы</h3>
+        <ul class="footer-links">
+          <li>Без регистрации</li>
+          <li>Без сбора данных</li>
+          <li>Работает офлайн</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year">2026</span> MiniBiz</span>
+      <span>Сайт работает без сервера и без сбора персональных данных.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

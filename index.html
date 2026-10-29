@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiniBiz — цифровые инструменты для работы</title>
+<meta name="description" content="MiniBiz — небольшая коллекция полезных цифровых инструментов: калькулятор комиссии, генератор описаний, анализатор текста и программы для Windows.">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232ee6a8'/%3E%3Ctext x='16' y='22' font-family='Segoe UI,Arial' font-size='16' font-weight='700' text-anchor='middle' fill='%2304231a'%3EM%3C/text%3E%3C/svg%3E">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'self'; base-uri 'self'">
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-mark" aria-hidden="true">M</span>
+      <span>MiniBiz</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Меню</button>
+    <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+      <a href="index.html" aria-current="page">Главная</a>
+      <a href="index.html#directions">Направления</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="tools/commission.html">Инструменты</a>
+      <a href="about.html">О проекте</a>
+      <a href="help.html">Помощь</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <section class="hero">
+      <span class="hero-badge">Пять направлений — одна цифровая мастерская</span>
+      <h1>Цифровые инструменты<br><span class="grad">и мастерская продуктов</span></h1>
+      <p class="hero-lead">
+        MiniBiz — небольшая цифровая мастерская: программы для Windows, создание
+        сайтов, разработка для Roblox, автоматизация рутины и цифровые наборы.
+        Работающие инструменты отмечены как «Готов», остальные — как «В разработке»
+        или «Скоро». Без регистрации, без подписок и без отправки данных в интернет.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#directions">Смотреть направления</a>
+        <a class="btn btn-ghost" href="catalog.html">Весь каталог</a>
+        <a class="btn btn-ghost" href="about.html">О проекте</a>
+      </div>
+    </section>
+
+    <section class="section" id="directions" aria-labelledby="directions-title">
+      <div class="section-head">
+        <h2 id="directions-title">Направления MiniBiz</h2>
+        <p>Что уже работает, что в разработке и что пока запланировано</p>
+      </div>
+      <div class="grid grid-directions" id="directions-grid"></div>
+    </section>
+
+    <section class="section" aria-labelledby="advantages-title">
+      <div class="section-head">
+        <h2 id="advantages-title">Почему так</h2>
+        <p>Простая архитектура вместо сложной инфраструктуры</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card feature reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+          </div>
+          <div>
+            <h3>Работает сразу</h3>
+            <p>Браузерные инструменты открываются в один клик — без установки и настройки.</p>
+          </div>
+        </div>
+        <div class="card feature reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          </div>
+          <div>
+            <h3>Данные остаются у вас</h3>
+            <p>Все вычисления выполняются на вашем устройстве. Нет скрытой телеметрии.</p>
+          </div>
+        </div>
+        <div class="card feature reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 3 12l6 6M15 6l6 6-6 6"/></svg>
+          </div>
+          <div>
+            <h3>Код открыт</h3>
+            <p>Исходники программ доступны для изучения и доработки под свои задачи.</p>
+          </div>
+        </div>
+        <div class="card feature reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.4-3 8-7 9-4-1-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h3>Без сюрпризов</h3>
+            <p>Никаких скрытых действий: программы перемещают файлы только после подтверждения.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <noscript>
+      <div class="note">
+        Карточки направлений и инструментов собираются с помощью JavaScript,
+        поэтому без него они не появятся. Откройте инструменты напрямую:
+        <a href="tools/commission.html">калькулятор комиссии</a>,
+        <a href="tools/description.html">генератор описаний</a>,
+        <a href="tools/text-analyzer.html">анализатор текста</a>.
+        Направления проекта и их состав описаны в
+        <a href="catalog.html">каталоге</a>.
+      </div>
+    </noscript>
+
+    <section class="section" aria-labelledby="featured-title">
+      <div class="section-head">
+        <h2 id="featured-title">Популярные инструменты</h2>
+        <a href="catalog.html">Весь каталог →</a>
+      </div>
+      <div class="grid grid-3" id="featured-products"></div>
+    </section>
+
+    <section class="section" aria-labelledby="latest-title">
+      <div class="section-head">
+        <h2 id="latest-title">Последние продукты</h2>
+        <p>То, что находится в разработке</p>
+      </div>
+      <div class="grid grid-3" id="latest-products"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">M</span>
+          <span>MiniBiz</span>
+        </a>
+        <p class="footer-note">
+          Цифровая мастерская MiniBiz: программы для Windows, сайты, разработка
+          для Roblox, автоматизация и цифровые наборы.
+        </p>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <ul class="footer-links">
+          <li><a href="index.html#directions">Направления</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="tools/commission.html">Калькулятор комиссии</a></li>
+          <li><a href="tools/description.html">Генератор описаний</a></li>
+          <li><a href="tools/text-analyzer.html">Анализатор текста</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Информация</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="help.html">Помощь</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Принципы</h3>
+        <ul class="footer-links">
+          <li>Без регистрации</li>
+          <li>Без сбора данных</li>
+          <li>Работает офлайн</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year">2026</span> MiniBiz</span>
+      <span>Сайт работает без сервера и без сбора персональных данных.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

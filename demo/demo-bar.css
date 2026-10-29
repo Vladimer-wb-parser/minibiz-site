@@ -1,0 +1,51 @@
+/* Стили демонстрационной панели.
+ *
+ * Это единственное, что добавлено к шаблону: полоски сверху и снизу, которые
+ * объясняют, что перед посетителем демонстрация, и дают ссылку на страницу
+ * товара. Сам шаблон — assets/starter-kit.css, он не изменялся. */
+
+.demo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 11px 20px;
+  background: #121d33;
+  border-bottom: 1px solid #1f2f4d;
+  color: #e8eef9;
+  font: 14px/1.5 "Segoe UI", system-ui, Roboto, Arial, sans-serif;
+}
+
+.demo-bar p {
+  margin: 0;
+}
+
+.demo-bar strong {
+  color: #2ee6a8;
+}
+
+.demo-bar a {
+  color: #2ee6a8;
+  text-decoration: none;
+}
+
+.demo-bar a:hover {
+  text-decoration: underline;
+}
+
+.demo-bar--bottom {
+  border-bottom: 0;
+  border-top: 1px solid #1f2f4d;
+}
+
+.demo-bar .demo-note {
+  color: #94a6c3;
+  font-size: 13px;
+}
+
+@media (max-width: 560px) {
+  .demo-bar {
+    padding: 10px 16px;
+  }
+}
